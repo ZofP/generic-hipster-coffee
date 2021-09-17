@@ -1,0 +1,27 @@
+.menu {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    width: 60%;
+    margin: 0 1rem;
+    h1 {
+      font-weight: bold;
+      width: 70%;
+    }
+    h2 {
+      width: 90%;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 2rem;
+    align-items: space-between;
+  }
+
+  &__img {
+    align-self: center;
+    position: relative;
+    top: 20px;
+  }
+}
