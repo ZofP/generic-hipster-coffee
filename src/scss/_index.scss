@@ -13,12 +13,37 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
 .homepage {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
   &__header {
-    width: 50%;
-    margin-left: 0.5rem;
+    width: 60%;
+    margin: 0 1rem;
     h1 {
       font-weight: bold;
+      width: 70%;
     }
+    h2 {
+      width: 90%;
+    }
+  }
+  iframe {
+    align-self: center;
+    position: relative;
+    top: 20px;
   }
 }
