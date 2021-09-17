@@ -1,0 +1,38 @@
+.nav {
+  background: rgb(143, 138, 138);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+    padding: 0 1rem;
+  }
+  &__logo {
+    width: 50%;
+  }
+
+  @media (min-width: 768px) {
+    justify-content: center;
+    &__container {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+    }
+    &__logo {
+      width: 10%;
+    }
+  }
+}
