@@ -25,12 +25,12 @@ body {
 }
 .our-story__owners {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 
 .our-story__desc {
   display: flex;
-  justify-content: flex-end;
   flex-direction: row;
+  align-items: flex-end;
 }
