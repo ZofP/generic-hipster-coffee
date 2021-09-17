@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>Our Story | Generic Hipster Coffee</title>
 </head>
 <body>
@@ -39,20 +42,32 @@ Believing as much in the hand of an educated barista as in the innovative equipm
 </p>   
 </section>
     <form class="form">
-        <input type="text" name="first-name" label="First Name *" class="form__input"/>
-        <input type="text" name="last-name" label="Last Name *" class="form__input" />
-        <input type="text" name="e-mail" label="e-mail *" class="form__input">
-        <input type="text" name="message" label="mesage *" class="form__input"/>
-        <label class="form-label">My message *</label>
+        
+        
+        
+        
+        <label for="first-name">First Name</label><input type="text" name="first-name" label="First Name *" class="form__input"/>
+        <label for="last-name">Last Name</label><input type="text" name="last-name" label="Last Name *" class="form__input" />
+        <label for="e-mail">E-mail</label><input type="text" name="e-mail" label="e-mail *" class="form__input">
+       
+        <label class="form__label">My message *</label>
 				<textarea rows="6" class="form__textarea"></textarea>
 				<button class="form__button">Send my message</button>
     </form>
     <footer class="footer">
-      <ul class="footer__container"></ul>
-      <li><a href="index.html" class="footer__link">Home</a></li>
-      <li><a href="menu.html" class="footer__link">Menu</a></li>
-      <li><a href="coffee.html" class="footer__link">Coffee</a></li>
-      <li><a href="our-story.html" class="footer__link">Our Story</a></li>
+      <ul class="footer__links">
+        <li><a href="index.html" class="footer__link">Home</a></li>
+        <li><a href="menu.html" class="footer__link">Menu</a></li>
+        <li><a href="coffee.html" class="footer__link">Coffee</a></li>
+        <li><a href="our-story.html" class="footer__link">Our Story</a></li>
+      </ul>
+      <div class="footer__desc">
+        <h4>#HIPSTERSMAKECOFFEE</h4>
+        <p>
+          Follow us on <a href="https://www.twitter.com">Twitter</a> and
+          <a href="https://www.instagram.com">Instagram</a>
+        </p>
+      </div>
     </footer>
 </body>
 </html>
