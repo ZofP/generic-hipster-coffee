@@ -19,6 +19,9 @@
     text-decoration: none;
     color: black;
     padding: 0 1rem;
+    &--active {
+      font-weight: bold;
+    }
   }
   &__logo {
     width: 50%;
