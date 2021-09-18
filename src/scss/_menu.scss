@@ -89,8 +89,10 @@
 }
 .red-wine {
   grid-area: red-wine;
-  position: relative;
-  top: -8rem;
+  @media (min-width: 768px) {
+    position: relative;
+    top: -8rem;
+  }
 }
 .cocktails {
   grid-area: cocktails;
