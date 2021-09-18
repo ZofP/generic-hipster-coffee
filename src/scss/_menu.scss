@@ -33,11 +33,6 @@
       width: 90%;
     }
   }
-  &__section {
-    @media (min-width: 768px) {
-      // margin: 2rem 0;
-    }
-  }
   &__heading {
     @media (min-width: 768px) {
       margin-top: 2rem;
@@ -94,6 +89,8 @@
 }
 .red-wine {
   grid-area: red-wine;
+  position: relative;
+  top: -8rem;
 }
 .cocktails {
   grid-area: cocktails;
