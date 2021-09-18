@@ -2,9 +2,27 @@
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 15%;
+    grid-gap: 2rem 5rem;
+    grid-template-areas:
+      "espresso filter"
+      "espresso specialties"
+      "iced hot"
+      "non-alcoholic ."
+      "lemonades water"
+      "alcoholic ."
+      "beer cocktails"
+      "white-wine spirits"
+      "red-wine spirits"
+      "food sweets"
+      "image image";
+  }
   &__header {
     width: 60%;
-    margin: 0 1rem;
+    margin: 0 15%;
     h1 {
       font-weight: bold;
       width: 70%;
@@ -15,10 +33,23 @@
       width: 90%;
     }
   }
+  &__section {
+    @media (min-width: 768px) {
+      // margin: 2rem 0;
+    }
+  }
+  &__heading {
+    @media (min-width: 768px) {
+      margin-top: 2rem;
+    }
+  }
   &__items {
     display: grid;
     grid-template-columns: 1fr 2rem;
-    align-items: space-between;
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 2rem;
+    }
   }
 
   &__img {
@@ -26,4 +57,57 @@
     position: relative;
     top: 20px;
   }
+}
+
+.espresso {
+  grid-area: espresso;
+}
+.filter {
+  grid-area: filter;
+}
+.specialties {
+  grid-area: specialties;
+}
+.iced {
+  grid-area: iced;
+}
+.hot {
+  grid-area: hot;
+}
+.non-alcoholic {
+  grid-area: non-alcoholic;
+}
+.lemonades {
+  grid-area: lemonades;
+}
+.water {
+  grid-area: water;
+}
+.alcoholic {
+  grid-area: alcoholic;
+}
+.beer {
+  grid-area: beer;
+}
+.white-wine {
+  grid-area: white-wine;
+}
+.red-wine {
+  grid-area: red-wine;
+}
+.cocktails {
+  grid-area: cocktails;
+}
+.spirits {
+  grid-area: spirits;
+}
+.food {
+  grid-area: food;
+}
+.sweets {
+  grid-area: sweets;
+}
+
+.image {
+  grid-area: image;
 }
